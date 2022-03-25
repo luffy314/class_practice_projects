@@ -1,23 +1,28 @@
 package my_utilities;
 
 public class ArrayUtil {
-    public static int minNumber(int[] arr){
-        int smallest=arr[0];
-        for (int i=0;i<arr.length;i++){
-            if(arr[i]<smallest){
-                smallest=arr[i];
+    public static int minNumber(int[] nums) {
+
+        int min = nums[0];
+
+        for (int num : nums) {
+            if (num < min) {
+                min = num;
             }
         }
-        return smallest;
+        return min;
     }
-    public static int maxNumber(int[] arr) {
-        int biggest = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > biggest) {
-                biggest = arr[i];
+
+    public static int maxNumber(int[] nums) {
+
+        int max = nums[0];
+
+        for (int num : nums) {
+            if (num > max) {
+                max = num;
             }
         }
-        return biggest;
+        return max;
     }
     /*
 
@@ -27,29 +32,30 @@ create a method that will accept an int array and an int number. Check and retur
 
      */
 
-    public static boolean contains(int[] arr,int num) {
-        boolean contain = false;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == num) {
-                contain = true;
-                break;
+    public static boolean contains(int[] nums, int element) {
+
+        for (int each : nums) {
+
+            if (each == element) {
+                return true;
             }
         }
-        return contain;
+        return false;
     }
+
     /*
     Add Element
 
 create a method that will accept an int array and an int number. Return an array with the given number added to the end of the array
      */
 
-    public static int[] addElement(int[] arr,int num){
-        int[] arr2=new int[arr.length+1];
-        arr2[arr2.length-1]=num;
-        for(int i=0;i<arr.length;i++){
-            arr2[i]=arr[i];
+    public static int[] addElement(int[] nums,int element){
+        int[] nums2=new int[nums.length+1];
+        nums2[nums2.length-1]=element;
+        for(int i=0;i<nums.length;i++){
+            nums2[i]=nums[i];
         }
-        return arr2;
+        return nums2;
     }
 
 }

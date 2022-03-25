@@ -21,7 +21,6 @@ public class StringUtil {
 //    create a method that will accept a currency type(String) and a currency amount (double)[as dollars] and convert the currency from dollars to a different type
 
     public static double currencyConverter(String type, double amount) {
-        double output;
         switch (type.toLowerCase().trim()) {
             case "euro":
                 return 0.91 * amount;
@@ -150,44 +149,6 @@ Hint: use your frequency method to do some of the work
         return duplicate;
 
     }
-    public static int minNumber(int[] arr){
-        int smallest=arr[0];
-        for (int i=0;i<arr.length;i++){
-            if(arr[i]<smallest){
-                smallest=arr[i];
-            }
-        }
-        return smallest;
-    }
-    public static int maxNumber(int[] arr) {
-        int biggest = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > biggest) {
-                biggest = arr[i];
-            }
-        }
-        return biggest;
-    }
-    public static boolean contains(int[] arr,int num) {
-        boolean contain = false;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == num) {
-                contain = true;
-                break;
-            }
-        }
-        return contain;
-    }
-    public static int[] addElement(int[] arr,int num){
-        int[] arr2=new int[arr.length+1];
-        arr2[arr2.length-1]=num;
-        for(int i=0;i<arr.length;i++){
-            arr2[i]=arr[i];
-        }
-        return arr2;
-    }
-
-
 }
 
 
