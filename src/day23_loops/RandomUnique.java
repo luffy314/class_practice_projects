@@ -31,3 +31,24 @@ public class RandomUnique {
         System.out.println(res);
     }
 }
+
+/*
+  Random random = new Random();
+
+        String number = "";
+        int count = 0;
+
+        while (count < 6) {
+
+            String num = "" + random.nextInt(10);
+
+            if (!number.contains(num)) {
+
+                number += num;
+                count++;
+
+            }
+        }
+
+        System.out.println("number = " + number);
+ */
