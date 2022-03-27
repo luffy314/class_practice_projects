@@ -58,6 +58,36 @@ create a method that will accept an int array and an int number. Return an array
         return nums2;
     }
 
+    /*
+    Used to find the first index of the element in the int array
+     */
+
+    public static int indexOf(int[] nums, int element) {
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == element) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+      /*
+    Used to find the first index of the element in the string array
+     */
+
+
+    public static int indexOf(String[] strs, String element) {
+        for (int i = 0; i < strs.length; i++) {
+            if (strs[i].equals(element)) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
 }
 
 /*

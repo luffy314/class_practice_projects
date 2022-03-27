@@ -1,0 +1,66 @@
+Day 36 Overloading Methods
+
+day36_methods
+__
+
+Overloading methods
+__
+
+Method overloading
+
+How to have methods with similar idea, first we can try with different name:
+but that means we would have to use so many more methods names
+
+    ex:
+        sumInt(int numOne, int numTwo)
+        sumDouble(double, numOne, numTwo)
+        sumString(String str, String str2)
+
+    * method that has the same name, but different parameters
+
+        -> allows us to have different methods, different code, but the same name
+
+    ex:
+        substring(start)
+        substring(start, end)
+
+        indexOf()
+
+Q: Can you overload a method by changing the return type
+    no, methods are overloaded by changing the parameters
+
+Q: After you overload a method, can you change the return type
+    yes, after a method is overloaded you can change the return type if you want
+
+
+    public static void method(){
+        System.out.println("default empty method");
+    }
+
+    // I will try to overload by changing the return type
+
+    //    public static int method(){
+    //
+    //    }
+    //    this is not valid, changing the return type does not overload
+
+    public static int method(int a){
+            return 0;
+    }
+
+var args
+variable arguments
+
+    allow you to create methods that accept an array as the parameter, but we can type all the elements directly, separated by commas, without making an array object
+
+    syntax:
+
+        normal -->     (int [] nums)
+        var args --> (int ... nums)
+
+            ex:    method(element, element, element)
+
+            public static int sum(int ... nums){
+
+            call the method:
+            System.out.println(sum(4, 6, 2, 6, 12, 4));
