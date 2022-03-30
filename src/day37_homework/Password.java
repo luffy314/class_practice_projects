@@ -71,3 +71,36 @@ Valid Password
 			! @ # $ % ^ & *
 
  */
+
+/*
+  public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your password: ");
+        System.out.println(isPasswordValid(input.nextLine()));
+    }
+
+    public static boolean isPasswordValid(String str){
+
+        int upperCase = 0;
+        int lowerCase = 0;
+        int number = 0;
+        int specialChar = 0;
+
+        if(str.length() >= 8) {
+            for (int i = 0; i < str.length(); i++) {
+                if(Character.isUpperCase(str.charAt(i))){
+                    upperCase++;
+                } else if(Character.isLowerCase(str.charAt(i))){
+                    lowerCase++;
+                } else if(Character.isDigit(str.charAt(i))){
+                    number++;
+                } else if(str.charAt(i) == '!' || str.charAt(i) == '@' || str.charAt(i) == '#' || str.charAt(i) == '$'
+                        || str.charAt(i) == '%' || str.charAt(i) == '^' || str.charAt(i) == '&' || str.charAt(i) == '*'){
+                    specialChar ++;
+                }
+            }
+        }
+
+        return upperCase >= 1 && lowerCase >= 1 && number >= 1 && specialChar >= 1;
+    }
+ */

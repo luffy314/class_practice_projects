@@ -3,7 +3,7 @@ package day37_homework;
 public class HTMLGenerator {
     public static void main(String[] args) {
 
-        String tag="gia^3";
+        String tag="gia^10";
         String word="";
         String num="";
         int size;
@@ -21,7 +21,6 @@ public class HTMLGenerator {
         for(int i=0;i<size;i++){
             System.out.print("<"+word+"></"+word+">");
         }
-
 
 
     }

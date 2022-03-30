@@ -106,20 +106,20 @@ Hint: use your frequency method to do some of the work
         String unique = "";
         String checked = "";
 
-        for(int i = 0; i < words.length(); i++){
+        for (int i = 0; i < words.length(); i++) {
 
-            if(!checked.contains("" + words.charAt(i))){
+            if (!checked.contains("" + words.charAt(i))) {
                 int count = StringUtil.frequencyOfCharacter(words, words.charAt(i));
                 checked += words.charAt(i);
 
-                if(count == 1){
+                if (count == 1) {
                     unique += words.charAt(i);
                 }
             }
         }
-            if (unique.isEmpty()) {
-                return "No unique chars";
-            }
+        if (unique.isEmpty()) {
+            return "No unique chars";
+        }
         return unique;
     }
 
@@ -133,7 +133,7 @@ Hint: use your frequency method to do some of the work
      */
 
     public static String duplicateCharacters(String words) {
-        words=words.trim().toLowerCase();
+        words = words.trim().toLowerCase();
         String duplicate = "";
         for (int i = 0; i < words.length(); i++) {
             if (duplicate.contains(words.charAt(i) + "")) {
@@ -142,12 +142,38 @@ Hint: use your frequency method to do some of the work
             if (frequencyOfCharacter(words, words.charAt(i)) > 1) {
                 duplicate += words.charAt(i);
             }
-            }
+        }
         if (duplicate.isEmpty()) {
             return "No duplicate chars";
         }
         return duplicate;
 
+    }
+/*
+Given a String in the following format take the number part of the generator the html tags.
+	Tags are surrounded with diamond brackets. The number of times to repeat with be given as the number after the ^
+
+	Ex:
+		Input:
+			div^2
+		Output:
+			<div></div> <div></div>
+ */
+
+    public static String htmlGenerate(String str) {
+
+        String html = "";
+        String[] parts = str.split("\\^"); // str.replace("^" , " ").split(" ");
+
+        int repeat = Integer.parseInt(parts[1]);
+
+        for (int i = 0; i < repeat; i++) {
+
+            html += "<" + parts[0] + "></" + parts[0] + "> ";
+
+        }
+
+        return html;
     }
 }
 
