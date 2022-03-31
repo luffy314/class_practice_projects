@@ -24,26 +24,53 @@ public class Fibonacci {
 //        System.out.println(Arrays.toString(fibonacci(7)));
 //}
     public static void main(String[] args) {
-        System.out.println(createFibonacciNumbers(4));
+        fibo(4);
     }
 
-    public static ArrayList<Integer> createFibonacciNumbers(int n){
+//    public static ArrayList<Integer> createFibonacciNumbers(int n){
+//
+//        ArrayList <Integer> list = new ArrayList<>();
+//
+//
+//        if(n >= 1){
+//            list.add(0);
+//            list.add(1);
+//
+//            for (int i = 2; i <= n; i++) {
+//                list.add(list.get(i - 2) + list.get(i - 1));
+//            }
+//        } else if(n == 0){
+//            list.add(0);
+//        }
+//
+//        return list;
+//    }
+    public static void fibo(int number){
 
-        ArrayList <Integer> list = new ArrayList<>();
 
 
-        if(n >= 1){
-            list.add(0);
-            list.add(1);
+        // Array solution
 
-            for (int i = 2; i <= n; i++) {
-                list.add(list.get(i - 2) + list.get(i - 1));
-            }
-        } else if(n == 0){
-            list.add(0);
+        int[] fibo=new int[number+1];
+
+        //System.out.println(fibo[8]);
+
+
+        fibo[0]=0;
+        fibo[1]=1;
+
+        for (int i = 2; i < fibo.length; i++) {
+
+
+            fibo[i]=fibo[i-1]+fibo[i-2];
+
         }
 
-        return list;
+
+        System.out.println(Arrays.toString(fibo));
+
+
     }
+
 
 }
