@@ -24,7 +24,7 @@ public class TwoSums {
                 }
             }
         }
-        if(solution==null)
+        if(solution==null) //added in case there is no solution but not needed due to problem saying it's not necessary
             return null;
         return solution;
     }
