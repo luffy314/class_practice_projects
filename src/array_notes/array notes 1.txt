@@ -1,0 +1,120 @@
+3/12/2022
+
+Day 28 Arrays
+
+day28_array
+____________________________________________________________
+
+Array
+for each loop
+____________________________________________________________
+
+Array: a data structure, which is a collection of data in one object
+
+	Before we had normal variables that stored one piece of information at a time
+
+	In programming working with multiple data is very common
+
+	Arrays are objects
+
+How to create arrays
+
+	there is two ways to make an array
+
+	1) datatype [] arrayName = { element, element, element };
+
+		able to make an array with initial elements. These elements are given between the curly brackets. Each element is separated by a comma
+
+		Ex:
+
+			String [] cities = { "Chicago", "New York" , "Houston", "Denver", "Pittsburgh" };
+
+			int [] nums = { 1, 2, 3, 4};
+
+	2) datatype [] arrayName = new datatype[size];
+
+		able to make an array of a certain size. These elements have a default value. There is elements created for each position made in the array
+
+		Ex: String [] cities = new String[5]; [ null, null, null, null, null ]
+
+			int [] nums = new int[4]; [0, 0, 0, 0]
+
+			boolean [] bool = new boolean[2]; [false, false]
+
+		Default values for array types
+
+			String --> null
+			int --> 0
+			double --> 0.0
+			boolean --> false
+
+		Q: What is the difference between null and "" (empty space)
+
+			null means nothing, for objects
+			empty space is a String, but it has no characters
+
+			Scanner input = null; // no actually Scanner object
+
+	Note:
+
+		int [] name
+			vs
+		int name []
+
+		both make an array, but the brackets in the middle are preferred
+
+How to read/use elements from an array
+
+	using the name of the array and the index number you are able to use that element
+
+	arrayName[index] --> gives back the element
+
+How do you know the number of elements
+
+	using the length value
+
+	arrayName.length --> gives back how many elements there is
+
+	Q: What is the difference between length() and length
+
+		length() is a String method to return the number of characters
+
+		length is an array property that returns the number of elements
+
+	Q: How can you access the last element
+
+		last index --> length - 1
+
+		arrayName[ arrayName.length - 1 ]
+
+How to print all the elements in the array
+
+	by default print an array:
+		System.out.println(arrayName)
+
+		will show the hash location of the object in the memory
+
+	We must use the Arrays class
+
+		Arrays class is a utility class, which has some useful methods
+
+			in order to use a class we need to import it:
+				import java.util.Arrays;
+
+		Arrays.toString() --> returns a String format of the whole array
+
+		System.out.println(Arrays.toString(arrayName));
+
+How to assign/reassign elements in an array
+
+	arrayName[index] = value;
+
+Looping through an array
+
+	in for loop:
+
+		arrayName[i]
+
+			where i is a variable declared in the loop that iterates 1 index at a time
+
+

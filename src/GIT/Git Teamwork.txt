@@ -1,0 +1,47 @@
+
+Git Team Collaboration Practice
+
+Team Lead:
+
+	Create a new java project
+	Create a .gitignore file and add the main folders to ignore
+		files: out, *.iml, .idea
+	Create the remote repository by publishing the project
+	Create a new branch from master called develop on the remote repository
+	Invite all team members by going to project settings -> manage access
+
+Other Team Members:
+
+	Go to email and accept invite to collaborate with the new repository
+	On the remote repository page find the code button and copy the given link
+	Use the given link from to clone the project
+
+Now there is a remote repository and everyone has the project locally
+
+Steps to repeat:
+
+	Update local project with changes from other team members on remote repository
+	In the local repositories create a new branch from master
+		- for this practice use your name for each personal branch
+	Makes some changes by adding files or updating a file (work in separate files to avoid conflicts)
+	Commit local changes and push to your origin branch (DO NOT PUSH TO DEVELOP OR MASTER BRANCH)
+	On GitHub create a pull request to merge the changes from your branch to the develop branch.		Assign a team member to review and approve
+
+			- If you are assigned a pull request view the commits of your team members and if there is no problem approve the pull request
+
+Every team member should go through the flow with the team to do some basic practice right now. When we start projects for automation you will need to use the git flow on top of the automation you will need to do, so practice the core git now without worrying about your tests.
+
+Whole group:
+
+	When you feel there is enough commits made to the develop branch make a pull request merge develop into the master branch
+	Everyone should update their projects before making any changes
+
+
+------------------------------------------------
+
+Extra
+
+	- Force a conflict with a team member by making the same file(name and location) locally in different branches
+	- Follow the same flow for committing and pushing
+	When making a pull request there will be a conflict
+	- Resolve the conflict by speaking to team member and discussing which changes to keep. Both? Part of one, or maybe part of the other

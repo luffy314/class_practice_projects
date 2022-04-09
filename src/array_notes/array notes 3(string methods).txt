@@ -1,0 +1,101 @@
+3/14/2022
+
+Day 30 Arrays
+
+day30_arrays
+____________________________________________________________
+
+String methods:
+    toCharArray()
+    split()
+____________________________________________________________
+
+for each loop
+
+    a loop used to iterate through a collection/data structure
+
+        there is many collections, right now we are using arrays
+
+    it will always iterate through the elements from the beginning to the end
+
+    syntax:
+
+        for(datatype name : array){
+
+        }
+
+
+        datatype is the type of each element in the array
+
+
+        name: represent every element during the execution
+            in traditional loop the way to get every element is using array[i]
+
+
+    When to use for each
+
+        - whenever you need to check each element of your array
+
+        - whenever you need to only read values, meaning no values in the array will be changed
+
+    When not to use for each
+
+        - whenever you need to use indexes
+
+        - whenever you would need to change the array
+
+____________________________________________________________
+
+String methods that are related to arrays
+
+    toCharArray()
+        no arguments
+        returns a char []
+
+        --> converts the String to a char array
+
+            Ex:
+                String s = "abc";
+                s.toCharArray() --> [ 'a', 'b', 'c' ];
+
+Note: String class works with char [] internally
+
+    - converting a char [] to a String:
+
+        using the new String approach of creating an array and giving the char [] as the argument
+
+        ex:
+            char [] arr = {'z', 'y', 'x'};
+
+            String str = new String(arr); // "zyx"
+
+    split():
+        String argument
+        returns a String []
+
+    --> converts the String into a String [] by separating the String into different parts, which become the elements of the String
+
+    -> the delimiter/separator is not included as an element. This determine how the String will be split it
+
+    most common use case:
+
+        convert a sentence to an array, where every word is an element
+
+        Ex:
+
+            String str = "Today is Monday";
+            String [] words = str.split(" ")  --> [Today, is, Monday]
+
+            words[0] --> Today
+            words[1] --> is
+            words[2] --> Monday
+
+    if you split by empty space
+        it returns back a String [] of each character in the String
+
+        Ex:
+            String s = "abc";
+
+            s.split("") --> [ "a", "b", "c"];
+
+

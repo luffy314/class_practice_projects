@@ -1,0 +1,72 @@
+3/16/2022
+
+Day 31 Arrays
+
+day31_array
+____________________________________________________________
+
+Arrays Class
+____________________________________________________________
+
+String Methods with Arrays
+
+	toCharArray(): convert a String to a char array, where each elements is every character from the the String
+
+	split(): convert a String to a String array, where each element is the sequence of characters between the given separator
+
+____________________________________________________________
+
+Arrays Class
+
+	https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
+
+	a class that has methods for arrays
+
+	located in the java.util
+
+		-> so to use this class you must import java.util.Arrays;
+
+	Methods:
+
+		Arrays.toString(arr): allowed us to print arrays objects as a String
+
+			--> array is the argument
+
+			Ex:
+				String [] s = {"a", "b", "c"};
+				Arrays.toString(s) --> [a, b, c]
+
+
+		Arrays.sort(arr): sort the elements in ascending order (smallest to largest)
+
+			--> array is the argument
+
+			does not return anything
+
+			for String/character types: lexicographical, means order in ascii table
+
+				special characters --> number --> uppercase (A-Z) --> lowercase(a-z)
+
+				aaa, aab aac
+
+			--> this method does not have a return(nothing to store), it will sort the object
+				array object are mutable, you can change the object after making
+					-> The size is fixed
+
+		Arrays.equals(arr, arr2): checks if the two given arrays are equal - they have the same elements
+
+			--> two array argument
+			--> returns boolean
+
+String method:
+
+	String.join()
+
+		two arguments:
+			String: which characters you want to separate, or be in between the elements
+			array: the data structure where the elements come from
+
+		lets you convert the array object to a String using a different format. You able to define the sequence of characters that will separate the element from the array
+
+
+

@@ -14,7 +14,7 @@ public class SumOfArray {
             int[] c = {1,2,2,6,99,99,7,3,4} = > 12
          */
 
-        int [] array= {1,6,2,2,99,99,7,4,6,4,4,5,4};
+        int [] array= {1,6,2,2,99,99,7,4,6,4,4,7,6};
         int sum=0;
         boolean checkSix=false;
 

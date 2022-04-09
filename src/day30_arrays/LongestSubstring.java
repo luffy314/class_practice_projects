@@ -67,3 +67,15 @@ String sentence = "abcdefabcdef"; //abc
         }
 
  */
+/*
+    String s = "abcababcababcababcab";
+    boolean noRepeatative = false;
+       for (int i =2; i<s.length();i++){
+           if(s.substring(0, s.length()/i).repeat(i).equals(s)&&s.length() %i == 0){
+        System.out.println(s.substring(0, s.length()/i));
+           break;}else{
+               noRepeatative=true;
+           }} if(noRepeatative){
+            System.out.println("There is no repetitive substring");
+        }
+ */

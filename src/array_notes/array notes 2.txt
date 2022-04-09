@@ -1,0 +1,105 @@
+3/13/2022
+
+Day 29 Arrays
+
+day29_array
+____________________________________________________________
+
+Array
+for each loop
+__________________________________________________________
+
+Array: a data structure that holds multiple pieces of information
+
+	2 ways to make arrays
+
+		datatype [] name = { elements, elements, elements};
+
+		int [] a = { 1, 2, 3, 4, 5};
+
+	or
+
+		datatype [] name = new datatype[size];
+
+		int [] b = new int[5];
+
+		--> When you create an array this way, an empty array is made with default values based on your datatype
+
+			String --> null
+			int --> 0
+			double --> 0.0
+			boolean --> false
+			char --> '\u0000' // don't worry about it so much
+
+Read elements from an array
+
+	name[index]  --> gives back the element
+
+Assign/reassign elements in an array
+
+	name[index] = value;
+
+Printing the whole array
+
+	the array object cannot be printed directly in the print statement
+
+	we must use Arrays.toString() method which accepts an array as an argument and returns a String format of our array
+
+How to iterate through an array
+
+	name[i]   where i is an int number in some loop that will go up by one
+
+__________________________________________________________
+
+For Each Loop
+
+	used with data structures/collections
+
+	so we know arrays
+
+	syntax:
+
+		for(datatype variableName : array/collection){
+
+		}
+
+		action: the loop will iterate through the array on the right side of the colon.
+				it goes from the first element to the last elements always
+				each iteration the element value will be used in the loop as the variableName defined
+
+		datatype in the loop declaration is the type of the elements
+
+		ex:
+
+			int [] arr = {10, 20, 30};
+
+			for(int num : arr){
+				System.out.println(num);
+			}
+
+			iteration 1:
+				num would be 10, prints 10
+
+			iteration 2:
+				num would be 20, prints 20
+
+			iteration 3:
+				num would be 30, prints 30
+
+
+		traditional loop vs for each loop iteration:
+
+			array[i] is the same as num in the for each loop
+
+	When should you use for each:
+
+		- if you want to iterate through all the elements
+
+		- read the values
+
+	When can you not use for each:
+
+		- use indexes: to change/update a variable dynamically
+
+		- modify the array in any way
+
