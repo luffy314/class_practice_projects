@@ -48,5 +48,6 @@ public class Practice7 {
             System.arraycopy(zombie, 0, inhabitants, 0, zombie.length);
 
         } while (!allZombie);
+
     }
 }
