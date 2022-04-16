@@ -23,13 +23,15 @@ public class Phone {
     int memory;
     double version;
 
-    public Phone(String str) {
-        name=str;   //this was works as well if u don't want to use this keyword
+    public Phone(String name) {
+        this.name=name;
+        call(name);
     }
 
     public Phone(String name, String brand) {
         this.name = name;
         this.brand = brand;
+        call(name);
     }
 
     public Phone(String name, String brand, int memory, double version) {
@@ -37,6 +39,10 @@ public class Phone {
         this.brand = brand;
         this.memory = memory;
         this.version = version;
+    }
+
+    public void call(String name){
+        System.out.println("calling "+ name);
     }
 
     @Override

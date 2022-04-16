@@ -13,6 +13,9 @@ public class UsePhone {
         Phone phone3 = new Phone("Galaxy s 22", "Samsung", 128, 10.2); // calls the constructor on line 36
         System.out.println(phone3);
 
+        Phone phone4 = new Phone("john");
+        System.out.println(phone4);
+
 
     }
 }

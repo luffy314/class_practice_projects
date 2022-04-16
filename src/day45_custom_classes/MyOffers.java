@@ -20,6 +20,8 @@ public class MyOffers {
                 new Offer("Tesla", "Texas", 250_000, false, 20),
                 new Offer("Facebook", "Florida", 120_000, true, 10)
         }; // created an array of Offer objects
+        System.out.println(Arrays.toString(moreOffers));
+        System.out.println();
 
         allOffers.addAll(Arrays.asList(moreOffers)); // added the array of Offers into the ArrayList of offers
 
