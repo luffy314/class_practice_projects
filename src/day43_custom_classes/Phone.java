@@ -23,8 +23,8 @@ public class Phone {
     int memory;
     double version;
 
-    public Phone(String name) {
-        this.name = name;
+    public Phone(String str) {
+        name=str;   //this was works as well if u don't want to use this keyword
     }
 
     public Phone(String name, String brand) {

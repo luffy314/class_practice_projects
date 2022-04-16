@@ -6,6 +6,7 @@ public class UsePhone {
         Phone phone1 = new Phone("IPhone X"); // calls the constructor on line 27
         System.out.println(phone1);
 
+
         Phone phone2 = new Phone("IPhone 12", "Apple");// calls the constructor on line 31
         System.out.println(phone2);
 
