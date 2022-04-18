@@ -151,3 +151,5 @@ Parameters:
 		to use this method:
 
 		printNumber(5) --> when calling the method an int type value must be given, and that is called the argument
+
+
