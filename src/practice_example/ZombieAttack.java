@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class ZombieAttack {
     public static void main(String[] args) {
+
         Scanner input=new Scanner(System.in);
         System.out.println("how many cities");
         int numCities= input.nextInt();
@@ -33,5 +34,6 @@ public class ZombieAttack {
         }}
         System.out.println(Arrays.toString(inhabitants));
         System.out.println(days);
+
     }
 }
