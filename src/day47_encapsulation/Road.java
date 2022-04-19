@@ -4,9 +4,11 @@ public class Road {
     public static void main(String[] args) {
 
         TrafficLight light = new TrafficLight("grey");
-//        System.out.println(light.color);
+//       System.out.println(light.color);
 //
 //        light.color = "pink";
+        System.out.println(light);
+
 
         TrafficLight light2 = new TrafficLight("red");
         System.out.println(light2.getColor());
@@ -17,6 +19,11 @@ public class Road {
 
         TrafficLight light3 = new TrafficLight("Black");
         System.out.println(light3.getColor());
+
+        String[] help=new String[3] ;
+        System.out.println(help);
+
+
 
     }
 }

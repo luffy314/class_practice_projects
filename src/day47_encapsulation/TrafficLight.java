@@ -18,5 +18,8 @@ public class TrafficLight {
             case "green":
                 this.color = color;
         }
+
+
     }
+
 }
