@@ -1,0 +1,70 @@
+4/19/2022
+
+Day 49 Inheritance
+
+day49_inheritance
+____________________________________________________________
+
+OOP: Inheritance
+____________________________________________________________
+
+Inheritance
+
+	allows a class to inherit(get) information and actions from different classes
+
+		define a general class --> go to a more specific class
+
+	+ provide code re-usability and maintainability
+
+	+ a good way to organize and group common information and actions
+
+Names of class with inheritance
+
+	parent == super == base
+
+	child == sub == derived
+
+How to inherit in java
+
+	we use extends keyword on the class we want to inherit to
+
+How inheritance works
+
+	pass the information and actions from the parent class to the child class
+
+	Ex:
+
+		public class Planet {
+			int distanceFromSun;
+		}
+
+		public class Earth extends Planet {
+
+		}
+
+	Planet is the super class
+	Earth is the sub class
+
+	The Planet class will pass its information to the Earth class
+
+Is A Relations
+
+	Inheritance creates is a relation between classes. It is a way to describe how the classes are related to each other
+
+	generic syntax:
+		child is a parent
+		sub is a super
+
+	Earth is a Planet
+
+What is inherited?
+
+	- all public variables and methods
+	- all protected variables and methods
+	- default variables and method when the classes are in the same package
+
+What is not inherited?
+
+	- constructors
+	- all private variables and methods
+	- default variables and method when the classes are not in the same package
