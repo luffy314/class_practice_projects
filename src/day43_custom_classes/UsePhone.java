@@ -16,6 +16,5 @@ public class UsePhone {
         Phone phone4 = new Phone("john");
         System.out.println(phone4);
 
-
     }
 }
