@@ -1,0 +1,76 @@
+4/27/2022
+
+Day 53 Abstraction
+
+day53_abstraction
+____________________________________________________________
+
+OOP: Abstraction
+Abstract Class
+____________________________________________________________
+
+OOP: principles that help design our classes and organize code in a way so that its reusable and maintainable
+
+Encapsulation: data hiding, used to protect the information by using private keyword and allowing indirect access to those variables with public getters and setters
+
+Inheritance: passing information from one class to another. The class that gives the information is called the ( Parent/Super/Base ) and the class that gets the information is called the ( Child/Sub/Derived ) class
+
+How does Encapsulation work with Inheritance?
+
+    private information does not get inherited to child classes, does it means we cannot use Encapsulation with Inheritance?
+
+    We can use them together because even if the variables cannot be inherited directly to the child, the child class will inherit the public getters and setters that will allow the variable be assigned to and to read from
+
+____________________________________________________________
+
+Abstraction
+
+	concept that allows us to hide the implementation of a method
+
+		focus on what the method does, not how it does it
+
+	implementation: the code, the actions the method do
+
+	abstraction cannot exist without inheritance
+
+How to achieve abstraction in java
+
+	1) abstract class
+	2) interface
+
+Abstract class:
+
+	a class that uses the keyword abstract
+
+	public abstract class hello {
+
+	}
+
+	able to define abstract methods
+
+	not able to create objects of this class
+
+Q: Can you create an object of a abstract class, even if there is no abstract methods created?
+
+	no, abstract class can never create objects of it
+
+Q: Can you have non-abstract methods in abstract classes
+
+	yes, you can define any number of abstract or non-abstract methods
+
+Abstract method:
+
+	a method without any implementation (no code body)
+
+	public abstract void eat();
+
+day53_abstraction.cars
+
+concrete class:
+
+	first non-abstract class (normal class) that inherits abstract methods
+
+	the concrete classes must implement all abstract methods
+
+day53_abstraction.exercise
+
