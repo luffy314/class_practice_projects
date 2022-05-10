@@ -8,4 +8,5 @@ public class Practice11 {
     public Practice11(){
         z=x+y;
     }
+
 }

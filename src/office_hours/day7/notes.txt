@@ -1,0 +1,127 @@
+
+INHERITANCE
+
+ Inheritance IS-A Relationship
+
+       SuperClass - Parent - Base : the class whose features are inherited
+       SubClass   - Child -  Derived :the class that inherits features from other class
+
+       public class Parent{
+
+       }
+       public class Child extends Parent {
+
+       }
+
+
+       What is inherited ?
+
+        - All public and protected variables and methods
+        - All default varaibles and methods (if parent and child needs to be in same package ) (PACKAGE-PRIVATE)
+
+       What is not inherited ?
+
+        - Private variables and methods CAN NOT be inherited (Access them with GETTER / SETTER )
+        - Constructors CAN NOT be inherited
+
+       Constructor
+
+         - The parent class constr alwasy executess before child constr
+
+         1. Child class constr MUST call parent constr
+         2. Parent class default constr is called by child class default constr implicitly
+         3. If the parent class constr is NOT DEFAULT, child one needs to call EXPLICITLY (manually)
+
+
+     super   : refers to parent class objects
+     super() : refers to parent class constr
+
+                - MUST be in the first line from CHILD class constr
+                - We can not use this() and super() at the same constr
+
+
+     OVERRIDING
+
+        Why we need ?
+
+            - Sometimes a subclass inherits a method from parent
+            but the method is inadquate for child classes
+                Shape --> area ()
+                Rectangle --> area()
+                Circle --> area()
+                ...
+                ..
+                .
+
+
+         RULES :
+
+             - There MUST be IS A RelationShip.Do it in subclass
+             - Parameters , Return Type , methodName (same method signature)
+             - Access Modifiers needs to be SAME or MORE VISIBLE
+
+                - public            public
+                - protected         public / protected
+                - default           public / protected / default
+                - private           CAN NOT BE INHERITED
+
+             - private, final and static ones CAN NOT BE OVERRIDEN
+
+
+        Method OVERLOADING
+           - Perform in SAME CLASS
+           - Parameters MUST be DIFFERENT
+           - Access Modifier can be change
+           - private , final methods can be overloading
+           - Return Type does not effect overloading
+
+        Method OVERRIDING
+           - Occurs in two class that have IS-A Relationship
+           - Parameters MUST be SAME
+           - Access Modifiers needs to be SAME or MORE VISIBLE
+           - private, final and static ones CAN NOT BE OVERRIDEN
+           - Return Type needs to be SAME
+
+
+        Can we override static methods ?
+            NO
+
+        Hiding Static Methods
+            - OVERRIDING +
+            - They needs to static methods
+
+
+FINAL
+
+
+
+
+    final : non-access modifier / keyword
+
+    final variables : After it has a value , it is not possbile to change it
+    final methods   : To prevent OVERRIDING
+    final classes   : To prevent INHERITANCE
+
+
+    variables :
+
+        - if the variable is final , we CAN NOT MODIFY IT
+        - When variable is final we need to initliaze them
+                - Constr
+                - Same statement
+        if final variable is STATIC they are called as CONSTANTS.
+                - Integer.MAX_VALUE;
+
+
+        Question : Can we create SETTER methods for final variables ?
+                   If variables is FINAL you can not use SETTER.(READ-ONLY)
+
+
+
+     methods : A final method can not be overriden
+
+     classes : A final class can not be extend
+
+
+day23Notes.txt
+4 KB
