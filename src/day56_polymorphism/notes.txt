@@ -1,0 +1,35 @@
+OOP: Polymorphism
+____________________________________________________________
+
+Objects
+
+    String str = "Java";
+
+    String str --> reference
+
+    "Java" --> object
+
+    --
+
+    Scanner input = new Scanner(System.in);
+
+    Scanner input  --> reference
+    new Scanner(System.in); --> actual object that the methods we can
+
+Polymorphism
+
+    objects being able to have different references
+
+possible references of an object
+
+    - itself: reference is the same class that the object was made from
+    - any super class: any class where there "is a" relation(both direct and not direct parents)
+    - interface: any interface that is implemented to the class
+
+** Note: Execution will happen on the object. That means the implemenation from the object will be run
+    A reference must have accessibility to the method/variable
+
+    --> dynamic binding: execution happens from the overridden implementation of the object
+        runtime
+
+day56_polymorphism.book
