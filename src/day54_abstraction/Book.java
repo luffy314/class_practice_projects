@@ -1,6 +1,12 @@
 package day54_abstraction;
 
-public class Book implements Create{
+public class Book implements Create, Boy{
+
+
+    @Override
+    public void fly() {
+        Boy.super.fly();
+    }
 
     @Override
     public void read() {

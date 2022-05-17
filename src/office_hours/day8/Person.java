@@ -17,7 +17,7 @@ public abstract class Person {
     }
 
 
-    public  abstract void sleep();
+      public abstract void sleep();
 
     public String getName() {
         return name;
@@ -34,4 +34,5 @@ public abstract class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
 }
