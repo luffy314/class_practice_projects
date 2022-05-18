@@ -1,6 +1,8 @@
 package office_hours.day8;
 
 public  class OnlineStudent extends Student {
+    public static Student cool;//didn't work they way i hoped
+    public static OnlineStudent test;
 
 
     public OnlineStudent(String name, int age, String batchNumber) {
