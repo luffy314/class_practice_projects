@@ -1,0 +1,63 @@
+
+Collection Framework
+    Collection
+    List
+    Set
+____________________________________________________________
+
+Collection Framework: a group of interfaces and class that define how data structures will handle data
+
+    -> only work with objects, not primitive types
+
+main interfaces:
+
+    collection: the parent of all other collections types. this interface defines the most common action(methods) that a collection should have
+
+        Ex: add, remove, size
+
+    list: ordered(index), allows duplicates
+
+    set: unordered(no index), does not allow duplicates
+
+Classes that implement the List interface:
+
+    ArrayList: data structure that uses arrays internally. Resizable array
+
+        -> useful for storing/reading information
+
+        -> faster than Vector, because ArrayList is not synchronized
+
+    LinkedList: data structure that uses nodes internally
+
+        -> Node: an object that has the element, the reference of the previous node, and the reference of the next node
+
+            ex:     node{
+                        element
+                        previous
+                        next
+                    }
+
+        -> useful for manipulating data
+
+    Vector: legacy version of ArrayList, it uses array internally, but its synchronized
+
+        synchronized(thread safe): multiple threads cannot access at the same. if there is multiple threads they will go one a time
+
+            ex: atm -> you want to access to atm one a time, so it is thread safe
+                if the atm was not thread safe then multiple people(threads) can interact at the same time -> that could cause problems like over drafting
+
+        - useful for thread safety
+
+Classes that implement the Set interface:
+
+    HashSet: data structure that uses HashMap internally. Hashing algorithm, which means its handles data fast and efficiently
+
+    LinkedHashSet: data structure that has hash table and linked list implementation. Insertion order is maintained
+
+    TreeSet: implements the SortedSet interface. Elements are stored in their natural order(sorted)
+        -> cannot have null element
+
+Tomorrow:
+    What is the advantage of the collection framework
+    What is the advantage of the polymorphic references
+
