@@ -1,0 +1,13 @@
+cmd + D = copy line ur at and paste it to next line
+cmd + D = copy line ur at and paste it to next line     example
+
+cmd+ \ = create new java file
+cmd+opt+\ = create new text file
+
+cmd + shift+ .  = show hidden files in computer
+cmd + , = open setting preferences
+
+cmd+c (use in git) = checkout to selected branch
+cmd + k = commit
+cmd + k + shift = commit and push
+cmd+ opt+ , = create new branch from selected
