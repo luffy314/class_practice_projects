@@ -1,8 +1,11 @@
+cmd+ shift + A == most useful, u can use it to find any command by typing comman in search
+
 cmd + D = copy line ur at and paste it to next line
 cmd + D = copy line ur at and paste it to next line     example
 
 cmd+ \ = create new java file
 cmd+opt+\ = create new text file
+opt + \ = create new package
 
 cmd + shift+ .  = show hidden files in computer
 cmd + , = open setting preferences
@@ -10,4 +13,28 @@ cmd + , = open setting preferences
 cmd+c (use in git) = checkout to selected branch
 cmd + k = commit
 cmd + k + shift = commit and push
-cmd+ opt+ , = create new branch from selected
+create new branch from selected = use the + sign to the left of local
+
+xmd +/ = use for block comments
+TODO = use for reminders to do work or come back to some part
+
+/** = used for javadoc
+
+cmd + shift +l = used to organize ur code, make it looked good
+cmd + f = find
+cmd + r = replace
+cmd + shift + f = more powerful find
+cmd + shift + r = more powerful replace
+
+shift shift = search files
+right click project files and search through to find anything
+
+cmd + shift + opt + u = show diagrams
+shift + fn + F6 = refactor
+
+shift + enter = open in right split
+
+ctrl + shift + r = run program
+ctrl + shift + d = debug program
+
+remember these
