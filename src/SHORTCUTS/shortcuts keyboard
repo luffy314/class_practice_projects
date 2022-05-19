@@ -12,7 +12,8 @@ cmd + , = open setting preferences
 
 cmd+c (use in git) = checkout to selected branch
 cmd + k = commit
-cmd + k + shift = commit and push
+cmd + k + shift = push
+cmd + k + opt = commit and push
 create new branch from selected = use the + sign to the left of local
 
 xmd +/ = use for block comments
