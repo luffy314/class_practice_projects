@@ -1,0 +1,81 @@
+What is the purpose of this keyword?
+
+    -> 'this' is used as a reference of the current class. The instance of the class is accessed by this, so the keyword is helpful to access any instance level members. One of the main uses of 'this' is to be able to differentiate between local variables and instance variables
+
+What is the purpose of super keyword?
+
+    -> 'super' is used as a reference of the parent class instance. It is similar as 'this' but instead of the current class instance it is for the instance of the super class
+
+Why do we use constructor chaining?
+
+    -> constructor chaining allows a constructor to call another constructor in the same class. constructor chaining improves the re-usability of the written code while reducing repeating code. We are able to execute already written code in a different constructor using this()
+
+Why must a sub class call the parent class constructor to create the object?
+
+    -> The object class is the parent of all classes in java. In order to create an object the constructor must call back to the parent class' constructor. The default constructor is automatically calling the super constructor, but if we create constructors in our sub classes we should keep in mind we must call back to the parent constructor. The parent constructor is called with super()
+
+What is the difference between this() and super()
+
+    -> this() is used to call constructors in the same class, for constructor chaining
+
+    -> super() is used to call the constructor in the super class
+
+What is the default constructor?
+
+    -> the default constructor is a constructor given by the compiler that allows us to create objects of any class we create. Also has built in calling the super constructor.
+
+How does it change if you create your own constructor? How does it change the super class interactions?
+
+    -> creating our own constructor means the default constructor will no longer be given, but the super constructor must still be called. And unless the super constructor was created to accept other argument the default constructor of the super class would need to be called
+
+What is the difference between method overloading and method overriding? Which things are inherited from one class to another?
+
+    -> Method overloading allows to create method in the same class with the same name but different parameters. Overloading allows different ways to use a method without having to memorize many method names
+
+    -> Method overriding happens between two classes. We are able to change the implementation of a method that was inherited from the super class. This allows us to create methods that are more specific to the child class object's
+
+    -> What is inherited:
+        All the accessible variables & methods (depending on the access modifier)
+
+    -> What is not inherited:
+        private variables or method, constructors
+
+What is inheritance?
+
+    -> inheritance allows us to share information/actions [variables/methods] from one class to another class. improves our code re-usability and reduce repetition
+
+    is a relations are created to describe relationship between classes
+
+What is encapsulation?
+
+    -> encapsulation allows to protect our data. We are able to do this by using private access modifiers on instance variables and creating public getter and setter methods. We protect the data by creating a layer between the information and allowing indirect access to that data, by the rules and conditions defined
+
+What is the difference between all the access modifiers? How are protected and default different?
+
+    most accessible to the least accessible
+
+    public --> protected --> default --> private
+
+    public: accessible/inherit anywhere in the project
+    protected: inherit anywhere in the project, but accessible within the same package
+    default: accessible/inherit only in the same package
+    private: only accessible in the same class, so cannot be inherited
+
+    -> protected and default are similar when there is no inheritance. Those members are accessible directly in the same package.
+    But as soon as there is inheritance protect members can be inherited anywhere, even outside the package
+
+Can you override static methods?
+
+    no, static methods cannot be overridden.
+    trying to create a method with the same signature in a sub class does not override the method. It would hide the method in the parent class, while having the new method in the child class
+
+    Both methods are assessable with the different class references
+
+What are final variables, final methods, and final classes?
+
+    final variables are variables that cannot be changed
+
+    final methods are methods that cannot be overridden. The implementation is fixed
+
+    final classes are classes that cannot be a parent of any other class
+
