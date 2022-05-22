@@ -16,6 +16,11 @@ shift + fn + F6 = refactor
 shift + enter = open in right split
 xmd +/ = use for block comments
 /** = used for javadoc
+cmd + enter   =   moves everything down one line while cursor stays same spot
+cmd + delete  = deletes entire line and moves lines up while cursor stays same spot
+opt + enter = opens up options on code (more actions)
+cmd + arrow keys = moves cursor to end and beginnign
+
 TODO = use for reminders to do work or come back to some part
 
 TODO ///GIT
@@ -37,3 +42,7 @@ right click project files and search through to find anything
 todo ///run/debug
 ctrl + shift + r = run program
 ctrl + shift + d = debug program
+
+
+tips
+type string test literal than higlight it and then press aposthrephe to surround it
