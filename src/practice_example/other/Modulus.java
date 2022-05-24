@@ -1,4 +1,4 @@
-package practice_example;
+package practice_example.other;
 
 public class Modulus {
     public static void main(String[] args) {

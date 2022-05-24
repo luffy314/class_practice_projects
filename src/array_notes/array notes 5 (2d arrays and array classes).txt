@@ -28,10 +28,10 @@ Arrays Class
 	Arrays.equals(): compare two array objects to see if they have the same elements
 
 		int [] a = {1, 4, 5};
-		int [] b = {1, 4, 5, 6};
+		int [] b1 = {1, 4, 5, 6};
 
 		Arrays.equals(n, a) --> true   | Remember we sorted the n array
-		Arrays.equals(a, b) --> false
+		Arrays.equals(a, b1) --> false
 
 String methods:
 

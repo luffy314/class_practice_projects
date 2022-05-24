@@ -56,7 +56,7 @@ String methods that are related to arrays
 
             Ex:
                 String s = "abc";
-                s.toCharArray() --> [ 'a', 'b', 'c' ];
+                s.toCharArray() --> [ 'a', 'b1', 'c' ];
 
 Note: String class works with char [] internally
 
@@ -96,6 +96,6 @@ Note: String class works with char [] internally
         Ex:
             String s = "abc";
 
-            s.split("") --> [ "a", "b", "c"];
+            s.split("") --> [ "a", "b1", "c"];
 
 

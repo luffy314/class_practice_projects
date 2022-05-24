@@ -1,4 +1,4 @@
-package practice_example;
+package practice_example.problems;
 
 public class AlternateDivide {
     public static void main(String[] args) {

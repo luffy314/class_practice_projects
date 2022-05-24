@@ -13,7 +13,7 @@ Recap
 	1D Single Dimensional Arrays
 
 		int [] nums = {1, 2, 5}
-		String [] words = {"a", "b", "c"}
+		String [] words = {"a", "b1", "c"}
 
 
 	2D Array

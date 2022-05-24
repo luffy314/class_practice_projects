@@ -1,4 +1,4 @@
-package practice_example;
+package practice_example.problems;
 
 public class AlternateDivide2 {
     // Function to perform division `x/y` of two numbers `x` and `y` without

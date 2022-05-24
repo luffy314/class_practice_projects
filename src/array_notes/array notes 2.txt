@@ -21,7 +21,7 @@ Array: a data structure that holds multiple pieces of information
 
 		datatype [] name = new datatype[size];
 
-		int [] b = new int[5];
+		int [] b1 = new int[5];
 
 		--> When you create an array this way, an empty array is made with default values based on your datatype
 
