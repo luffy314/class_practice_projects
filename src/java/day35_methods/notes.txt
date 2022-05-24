@@ -1,0 +1,54 @@
+Day 35 Return Methods
+
+java.day35_methods
+__
+
+Method Practice
+Utility Classes
+__
+
+recap
+
+    return type method
+
+        a method: it has some code statement meant to be executed many times. It has some action
+
+        return type: some value will be given from the method
+
+        general syntax:
+
+            public static RETURN_TYPE methodName(){
+
+            }
+
+        creating a method with a return type, which means it is not void, there must be a return value given matching the datatype of the RETURN_TYPE
+
+            --> the value is returned from a method using keyword: return
+
+        when the return keyword is executed a value is passed from the method to where the method was called, and the method stops execution
+
+How to call a method that is outside of the package?
+
+    1) import the class where the method is created
+
+            import packageName.className;
+
+                import: keyword
+
+                packageName: package where the file being used was created
+
+                className: class where the method you want to use is created
+
+    2) use the method by the class name
+
+            className.method()
+
+        Note: if you are in the same package you don't need to import
+
+        Note: if you are in the same class you don't need to put the class name part
+
+How to import the whole package:
+
+    import packageName.*;
+
+    * is wildcard. It will import all classes in the defined package

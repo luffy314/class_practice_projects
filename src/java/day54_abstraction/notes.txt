@@ -1,0 +1,87 @@
+5/3/2022
+
+Day 54 Abstraction
+
+java.day54_abstraction
+____________________________________________________________
+
+OOP: Abstraction
+Abstract Class
+Interface
+____________________________________________________________
+
+Abstraction
+
+	concept that allows us to hide the implementation of a method, meaning we can create ideas/actions without worrying about how those idea or action are done
+
+	create methods that have no implementation
+
+		-> This allows us to establish common methods that would shared with multiple classes/object but not having to worry about what the methods does
+
+	abstraction in java
+
+		1) abstract class
+		2) interface
+
+Abstract class
+
+	class that has the abstract keyword
+
+	ex: public abstract class Example {}
+
+	- abstract classes can make abstract methods
+
+	- abstract classes cannot be instantiated (cannot create object of the class)
+
+		cannot do: Example obj = new Example();
+
+Abstract method:
+
+	a method without a code body ( no implementation )
+
+	-> these methods must be overridden (implemented) in the sub classes that inherit them
+
+	ex: public abstract int getNumber();
+
+concrete class:
+
+	first non-abstract(normal) class which must override all abstract methods from any super classes or interfaces
+
+	-> reasons: normal classes cannot have abstract methods, so if any abstract method is inherited it must be implemented
+
+java.day54_abstraction.animal
+
+java.day54_abstraction.creating
+
+java.day54_abstraction.language
+
+____________________________________________________________
+
+Interface
+
+	another way to make abstract methods
+
+	they will be declare with keyword interface, instead of keyword class
+
+	public interface Go {
+
+	}
+
+	-> Note: the interfaces are made in .java files, so the interface name will match the .java file name
+
+	method created in an interface are public abstract by default
+
+	variables created in an interface are public static final by default
+
+	-> no instance members in an interface
+
+	Interface are not the class, there is no constructor, no blocks
+
+	How to use an interface
+
+		when you go from an interface to a class, use keyword implements
+
+In java we cannot have more than one direct parent
+
+The interfaces are not a class, so they do not follow the same rules, and so we are able to implement multiple interfaces to one class
+

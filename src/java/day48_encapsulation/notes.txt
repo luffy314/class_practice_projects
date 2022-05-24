@@ -1,0 +1,132 @@
+Day 48 Encapsulation
+
+java.day48_encapsulation
+____________________________________________________________
+
+OOP: Encapsulation
+OOP: Inheritance Intro (Maybe or static import)
+
+Unit 4: April 22 - April 26
+____________________________________________________________
+
+access modifiers
+
+	controlling the access of data and actions
+
+	public: accessible anywhere in the project
+	default: accessible only within the same package
+		(no other access modifier was applied)
+	private: accessible only within the same class
+
+	Q: Can local variable have access modifiers
+
+		local variable belong the code block they are created, so no you can't use access modifiers with local variables
+
+	What can you use access modifiers on:
+
+		variables, methods, and constructors can have any access modifier
+
+		classes: public and default
+
+	Ex:
+
+		Paper.java
+
+		package p1;
+
+		public class Paper {
+
+			public void write() {}
+
+			void fold() {}
+
+			private void mail() {}
+
+		}
+
+		Main.java
+
+		package p1;
+
+		public class Main {
+
+			public static void main(String [] args){
+				Q: What do you have access to here
+			}
+
+		}
+
+		access to:
+			write() because it is public
+			fold() because it is default and we are in the same package
+
+		don't have access to:
+			mail() because it is private so it can't be access outside of the class
+
+		--------------------
+
+		Other.java
+
+		package p2;
+
+		public class Other {
+
+			public static void main(String [] args){
+				Q: What do you have access to here from Paper class
+			}
+
+		}
+
+		access to:
+			write() because it is public
+
+		don't have access to:
+			fold() because it is default and we are not in the same package
+			mail() because it is private so it can't be access outside of the class
+
+Q: How can you access any of the methods?
+
+	They are instance methods, so you must make objects to use them
+
+OOP Concepts
+
+	Object Oriented Programming
+
+	Encapsulation
+	Inheritance
+	Abstraction
+	Polymorphism
+
+Encapsulation:
+
+	a concept that allows us to protect our information from direct access and allows us to define and limit how the information should be used
+
+	How to achieve encapsulation in java:
+
+		add private access modifier to the variables
+
+			-> this stops anyone can using the variable outside of the class
+
+		create getters and setters methods
+
+			-> these methods allow you to access and use the information, but in a protected way
+
+			getters: method to give the value of your variable
+
+			setters: method to change the value of your variable
+
+Ex:
+
+	public class Water  {
+
+		private int oz;
+
+		public int getOz(){
+			return oz;
+		}
+
+		public void setOz(int oz){
+			this.oz = oz;
+		}
+
+	}
