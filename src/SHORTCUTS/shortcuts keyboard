@@ -2,6 +2,7 @@ cmd+ shift + A == most useful, u can use it to find any command by typing comman
 
 cmd + D = copy line ur at and paste it to next line
 cmd + D = copy line ur at and paste it to next line     example
+cmd + c = copies line ur on
 
 todo ///Create New
 cmd+ \ = create new java file
@@ -20,6 +21,9 @@ cmd + enter   =   moves everything down one line while cursor stays same spot
 cmd + delete  = deletes entire line and moves lines up while cursor stays same spot
 opt + enter = opens up options on code (more actions)
 cmd + arrow keys = moves cursor to end and beginnign
+cmd +shift + back arrow = selects the current line ur on
+cmd +shift + front arrow = selects the current line ur on
+cmd + shift + up or down = swaps the two lines above and below
 
 TODO = use for reminders to do work or come back to some part
 
