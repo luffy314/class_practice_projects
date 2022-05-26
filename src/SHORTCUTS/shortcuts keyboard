@@ -4,6 +4,7 @@ cmd + D = copy line ur at and paste it to next line
 cmd + D = copy line ur at and paste it to next line     example
 cmd + c = copies line ur on
 
+
 todo ///Create New
 cmd+ \ = create new java file
 cmd+opt+\ = create new text file
@@ -24,6 +25,8 @@ cmd + arrow keys = moves cursor to end and beginnign
 cmd +shift + back arrow = selects the current line ur on
 cmd +shift + front arrow = selects the current line ur on
 cmd + shift + up or down = swaps the two lines above and below
+cmd + w = close current open java tab
+opt + character = creates different symbols Ω≈ç√∫˜˜≤˚¬∆©ƒ∂®´´∑†¥ˆˆ
 
 TODO = use for reminders to do work or come back to some part
 
@@ -44,6 +47,8 @@ shift shift = search files
 right click project files and search through to find anything
 
 todo ///run/debug
+ctrl + z = run program
+ctrl + \ = run program
 ctrl + shift + r = run program
 ctrl + shift + d = debug program
 
