@@ -1,0 +1,93 @@
+
+Functional Interface
+Lambda
+____________________________________________________________
+
+Sharing soon:
+
+	oca material/ practice quizzes
+	extra topics notes
+	study guide unit 5 + 6 - last assessment
+	Social Media Solution
+
+Reminder: Polymorphism quiz due tonight
+
+____________________________________________________________
+
+Functional Interface
+
+	not used for inheritance
+		-> not inherited
+		-> not intend to be implemented to a class to be overridden
+
+	act as function/custom method
+
+	define one abstract method
+		-> trying to define more than one abstract method in a functional interface would say a syntax issue
+
+		common names for those methods: test, apply, function
+
+	@FunctionalInterface annotation used before the interface line
+
+	Q: If you don't inherit these interface, how would we implement the abstract method?
+
+		lambda expression
+
+	+ improve code efficiency
+	+ stream methods
+
+Lambda Expression:
+
+	functions/method without name
+
+	instance of the functional interface
+		-> allows you to define the implementation of the abstract method
+
+	syntax:
+
+		() -> {};
+
+		(parameters) -> {statements};
+
+		Note: parenthesis for the parameter is only needed if there is more than one parameter
+		Note: curly brackets for the statements are only needed if there is multiple lines
+
+____________________________________________________________
+
+Generics
+
+	<> brackets define that any type/object can be used
+
+	T is a common name <T>
+	also: U, R (return type)
+
+____________________________________________________________
+
+Functional Interface built in Java:
+
+	Predicate
+		defines a function that takes one object as the argument and returns boolean
+
+		boolean test(T t)
+
+		-> p is a common name for the argument name in the lambda
+
+		example we have used:
+			removeIf method when we used the lambda to remove the elements
+
+			the parameter of the removeIf method was a Predicate functional interface
+
+	Consumer
+		defines a function that takes one object as the argument and does not return anything
+
+		void test(T t)
+
+	ex:
+		forEach method from collections takes the Consumer argument
+
+
+	Function<T, R>
+		defines a function that takes one object(any type) as the argument and returns one object(any type)
+
+			R apply(T t);
+
