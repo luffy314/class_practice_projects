@@ -5,4 +5,5 @@ public interface NumberInterface {
 
     void apply(int n);
 
+
 }
