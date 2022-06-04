@@ -1,0 +1,39 @@
+Flifrid question : **How to test a vending machine? **
+
+[ - this question can be answered directly providing the functionalities that needs to be tested. Rr go over by STLC steps. ]
+
+My answer would be:
+          A vending machine is an automated machine that provides items such as snacks, beverages, and lottery tickets to consumers after cash, a credit card, or other forms of payment are inserted into the machine or otherwise made.
+
+As a QA engineer, to test one project, I follow the STLC steps:
+
+- 1st If there is any requirement, I will analyze it, to understand what kind of features does this project has, how it supposed to function.
+
+- and then, I will create a test plan in which I document : what to test? what software & hardware resources I need? who are the QA team? what is our schedule to perform testing? testing scope which described what type of testing we will perform? Functional? non-functional? what tools do we need?
+
+- next step is test case preparation based on the requirement. As a functional testing I could think of many scenarios to test the functionality of a vending machine
+
+- if correct product is dispensed when selected
+- what if product is stock in the machine?
+- if user can Select product on keypad
+- if user can insert cash?
+- does the machine return exchange for the extra money?
+– test with Coins, Cash, Card, Apple Pay, Crypto currency payment
+- what if any payment is rejected?
+
+If I need any data, like vending machine, products, coins, cash etc, I will prepare them.
+
+- once my test cases are ready, I will make sure I have a vending machine, and it works as expected. (it is like environment set up)
+
+- Now I can start testing / execute testing.
+
+- if the expected result match the actual result, the test case will pass.
+- if they are not match, I will start bug life cycle:
+
+      - confirm it is a valid bug by testing multiple data
+      - talk to other QA or developer to confirm
+      - based on the communication result, I may or may-not create a bug report
+
+    if any bug is created, a dev will fix it -> I will re-test to confirm the bug is removed.
+
+- at the end, testing is over, and I can create a RTM to make a summary for test closure.
