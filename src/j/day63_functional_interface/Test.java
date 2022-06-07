@@ -9,6 +9,7 @@ public class Test {
 
     String one= "cool";
     String reverse = new StringBuilder("wolf").reverse().toString();
+    String reverse2 = new StringBuilder(one).reverse().toString();
         System.out.println(reverse);
 
         StringBuilder two= new StringBuilder("chicken");
