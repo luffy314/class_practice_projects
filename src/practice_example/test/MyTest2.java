@@ -1,5 +1,5 @@
 package practice_example.test;
-//testing out static block placement in class body and how it effect the initialization of static variables. if static block is after static variables, then static variables will equal whatever static block says. if static block is before static variables, then for variables that are only declared, they will take the static block value, but for static varaibles that are already initalized with a value, they will keep their value and only take the static block value when static block is running then they will reset to their original value. same rules apply for instance variables and IIB.
+//testing out static block placement in class body and how it effect the initialization of static variables. if static block is after static variables, then static variables will equal whatever static block says. if static block is before static variables, then for variables that are only declared, they will take the static block value, but for static varaibles that are already initalized with a value, they will keep their value and only take the static block value when static block is running then they will reset to their original value. same rules apply for instance variables and IIB. property initializor
 public class MyTest2 {
 
     //instance variables and IIB tests here
@@ -23,6 +23,7 @@ public class MyTest2 {
     static boolean rich=false;
     static int x;
     static int y=5;
+    static int p=100000;
     static char c;
     static char f=31000;
     static char q='∂';
@@ -47,6 +48,8 @@ public class MyTest2 {
         str2="fzfzfzf";
         str3="oooooo";
         str4=null;
+        word="lllllll";
+        help="qqqqqqqq";
 //        change();
 
 
@@ -64,6 +67,8 @@ public class MyTest2 {
 //   static String str2=null;
 //   static String str3="test";
 //   static String str4="test";
+    static String word;
+    static String help="bbbbbbb";
 
 
     static void change(){
@@ -71,6 +76,9 @@ public class MyTest2 {
     }
 
     public static void main(String[] args) {
+        MyTest2 two=new MyTest2();
+
+
         System.out.println(MyTest2.rich);
         System.out.println(MyTest2.old);
         System.out.println(MyTest2.x);
@@ -84,6 +92,8 @@ public class MyTest2 {
         System.out.println('\u0000');//default value for char, it means null pretty much
         System.out.println(f);
         System.out.println('\uffff');
+        System.out.println(word);
+        System.out.println(help);
 
         System.out.println("IIB------------");
         MyTest2 one=new MyTest2();

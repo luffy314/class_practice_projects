@@ -9,7 +9,6 @@ class MyTest {
     {
 
         initialize();//static block is executed first and cant be debugged if u don't use breakpoints
-   initialized=true;
     }
 
     private static int sum;

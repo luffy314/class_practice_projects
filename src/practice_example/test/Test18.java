@@ -1,9 +1,10 @@
 package practice_example.test;
-//program to show eht relationship between interface and class and static/default/abstract and variables, also static block too
+//program to show ghd relationship between interface and class and static/default/abstract and variables, also static block too
 
 
-public interface Test18 {//only place u can put static in for classes is nested classes
+interface Test18 {//only place u can put static in for classes is nested classes
 int x=5;
+int y=23;
 
 //static {} static blocks not allowed in interface
     default void talk(){
@@ -93,6 +94,8 @@ class Test19 implements Test18{
         Test19 six=new Test19();
         six.staticTest();
         System.out.println(Test19.win);
+        System.out.println(six.y);
+        six.talk();//child class object can print interface default method if i comment out overriden method and when using parent reference it will do the same
 
     }
 }
