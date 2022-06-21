@@ -1,4 +1,7 @@
 package practice_example.test;
+
+import java.util.ArrayList;
+
 //inner cllases can break so many rules
 public class Test25 {
 
@@ -46,4 +49,12 @@ public class Test25 {
 
 class Test250 extends Test25{//inherits stuff in parent class like the inner classes but doesn't have to do anything with them
 
+    public static void main(String[] args) {
+
+        var one=new String("testing");
+        System.out.println(one);
+
+        var list=new ArrayList<>();
+//var lets call any class without having to write the full name
+    }
 }

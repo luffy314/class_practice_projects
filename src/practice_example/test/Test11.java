@@ -20,6 +20,10 @@ public class Test11 {
         System.out.println("make money parent");
     }
 
+    void burn(){
+        System.out.println("parent burn");
+    }
+
     public static void main(String[] args) {
         eat();
         Test11.eat();
@@ -70,6 +74,8 @@ class win extends Test11 {
         ((Test11) one).money();
 
 //        win four = new Test11();   compile error
+
+        (new win()).burn();//child class object can access parent instance method since it's inherited and prob called through consructor ...maybe
 
 //child class can access parent static methods but not instance methods and will print them. if child class has the same static method as the one inherited from parent, only child static method will print using the child class name, u can't upcast it. child class object can upcast and access parent static method and parent instance method. parent class object can downcast and access child static method but can't access child instance methods.
 
