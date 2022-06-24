@@ -1,6 +1,6 @@
 package other;
 
-public abstract class D {
+public class D {//same for abstract
 
 
     private class D2{

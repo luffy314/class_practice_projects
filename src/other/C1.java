@@ -9,6 +9,6 @@ public abstract class C1 {
 
     private abstract class C7{};
 
-
+private interface C8{}
 
 }
