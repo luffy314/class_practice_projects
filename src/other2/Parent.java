@@ -3,12 +3,13 @@ package other2;
 // A Simple Java program to demonstrate
 // Overriding and Access-Modifiers
 
-class Parent {
+public class Parent {
     // private methods are not overridden
     private void m1()
     {
         System.out.println("From parent m1()");
     }
+
 
     protected void m2()
     {
@@ -24,10 +25,18 @@ class Parent {
         System.out.println("parent surf");
     }
 
+    protected Object test(Object one){//here and also class inside interface
+        System.out.println("parent test");
+        return null;
+    };
+
 
 }
 
 class Child extends Parent {
+
+
+    int q=744;
     int x=10;
     static int y=40;
     // new m1() method
@@ -42,6 +51,7 @@ class Child extends Parent {
     @Override
     public void m2()
     {
+
         System.out.println("From child m2()");
     }
     {
@@ -93,6 +103,7 @@ class Main {
 //        ((obj2)obj1).twice(); doesn't work if method doesn't exist in parent class
 //        obj2.twice();   doesn't ework if method isn't in parent class as well
         ((Child) obj2).twice();//works prints 69
+//        System.out.println(((Parent)three).x); doesn't work if parent doesn't have value eve if u cast
 
         obj2.surf();
         System.out.println("----------");
@@ -113,16 +124,27 @@ class Main {
         }
 
         System.out.println(x);
-    }
-    }
 
+
+    }
+    }
 
 interface T{
+
     void shine();
+
+    public class tom{
+        static {
+
+        }
+
+    }
 }
 
 abstract class U implements T{
+
     public void shine(){
         System.out.println("shhot");
     }
+
 }
