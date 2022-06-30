@@ -53,6 +53,7 @@ class Child extends Parent {
     {
 
         System.out.println("From child m2()");
+
     }
     {
         x=88;
@@ -126,6 +127,7 @@ class Main {
         System.out.println(x);
 
 
+
     }
     }
 
@@ -148,3 +150,5 @@ abstract class U implements T{
     }
 
 }
+
+
