@@ -3,7 +3,7 @@ package other2;
 public class SwitcStatement {
     public static void main(String[] args) {
 
-        char letter ='c';
+        char letter ='f';
         switch (letter) {
             case 'a':
                 System.out.println("three");
@@ -16,6 +16,7 @@ public class SwitcStatement {
                 System.out.println("five");
 //byte,short,int,char,same wrapper ones,enum,string. null can't be used. default optional and can be anywhere. switch better than if/else, more optimizex
         }
+
 
 
     }
